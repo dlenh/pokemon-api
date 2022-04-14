@@ -76,7 +76,7 @@ pink.addEventListener("click", () => {
 })
 
 function getPokemon() {
-fetch(`https://pokeapi.co/api/v2/pokemon-color/black/`)
+fetch(`https://pokeapi.co/api/v2/pokemon-color/${color}/`)
     .then(res => res.json())
     .then(data => {
         random = Math.ceil(Math.random() * data.pokemon_species.length)
